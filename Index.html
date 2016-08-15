@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- я такой код использую для responsive. Что лучше и правильно не знаю. Один из них потом удали-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-
 	<title>Adventurer</title>
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -32,7 +29,7 @@
 		</div>
 
 		<!-- Slider -->
-		<!-- Слайдер не трогал, если использовать какой-то плагин, то в нем будет своя настройка и свои теги. Я использую http://jquery.malsup.com/cycle2/ -->
+		<!-- Слайдер не трогал, если использовать какой-то плагин, то в нем будет своя настройка и свои теги. Я использую http://jquery.malsup.com/cycle2/  Ок,  дойдем до него.-->
 		<div class="jumbotron">
 			<div class="container">
 			<h1>adventurer</h1>
@@ -60,34 +57,35 @@
 			<!-- Вот пример http://shinyhappyhuman.com/mastermomlife/ Это я делал http://prntscr.com/c5wvxo-->
 				<div class="accordion">
 					<div class="accordion-section">
-						<a href="#accordion-1" class="accordion-section-title">Lorem ipsum dolor sit amet.</a>
-						<div id="accordion-1" class="accordion-section-content">
+						<a href="#accordion_1" class="accordion__section-title">Lorem ipsum dolor sit amet.</a>
+						<div id="accordion-1" class="accordion__section-content">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minima vitae sequi sit nesciunt, recusandae ipsam voluptates harum quae dolor magnam ratione quam, aliquid et modi sint ex atque sunt?</p>
 						</div>
 					</div>
 					<div class="accordion-section">
-						<a href="#accordion-2" class="accordion-section-title">Lorem ipsum dolor sit amet.</a>
-						<div id="accordion-2" class="accordion-section-content">
+						<a href="#accordion-2" class="accordion__section-title">Lorem ipsum dolor sit amet.</a>
+						<div id="accordion-2" class="accordion__section-content">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minima vitae sequi sit nesciunt, recusandae ipsam voluptates harum quae dolor magnam ratione quam, aliquid et modi sint ex atque sunt?</p>
 						</div>
 					</div>
 					<div class="accordion-section">
-						<a href="#accordion-3" class="accordion-section-title">Lorem ipsum dolor sit amet.</a>
-						<div id="accordion-3" class="accordion-section-content">
+						<a href="#accordion-3" class="accordion__section-title">Lorem ipsum dolor sit amet.</a>
+						<div id="accordion-3" class="accordion__section-content">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minima vitae sequi sit nesciunt, recusandae ipsam voluptates harum quae dolor magnam ratione quam, aliquid et modi sint ex atque sunt?</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="right-block">
-			<!-- Это пока не знаю как лучше сделать. Надо почитать в интернете. Кстати, давно собирался) -->
-				<p>Web Design 80%</p>
-				<p>Html and Css 60%</p>
-				<p>Graphic Design 75%</p>
-				<p>Wordpress 90%</p>
-				<p>Joomla 50%</p>
-				<p>Php and MySql 85%</p>
+			<!-- Это пока не знаю как лучше сделать. Надо почитать в интернете. Кстати, давно собирался) Я нашел такое решение http://codepen.io/Tushkiz/pen/lntvd -->
 			</div>
+			<section id="skills">
+					<progress value="80" max="100"></progress><span>Web Design 80%</span>
+					<progress value="60" max="100"></progress><span>Html and Css 60%</span>
+					<progress value="75" max="100"></progress><span>Graphic Design 75%</span>
+					<progress value="90" max="100"></progress><span>Wordpress 90%</span>
+					<progress value="50" max="100"></progress><span>Joomla 50%</span>
+					<progress value="85" max="100"></progress><span>Php and MySql 85%</span>
+					</section>
 		</div>
 	</section>
 
@@ -101,7 +99,7 @@
 			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis molestias at ratione veniam iure minus nam pariatur corporis ea tenetur.</p>
 			  	<a href="#" class="btn">see more</a>
 			</div>
-			<div class="boxre">
+			<div class="box">
 			  	<img src="images/" alt="">
 			  	<h3>fully customizable</h3>
 			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis molestias at ratione veniam iure minus nam pariatur corporis ea tenetur.</p>
@@ -117,8 +115,8 @@
 	</section>
 
 	<!-- Join our creative company -->
-	<!-- Примечание. Я называю class and id через нижнее подчеркивание, так проще копировать потом, просто нажать два раза левой кнопкой мыши-->
-	<section id="join_company">
+	<!-- Примечание. Я называю class and id через нижнее подчеркивание, так проще копировать потом, просто нажать два раза левой кнопкой мыши // Я очень хочу придти для себя к устоявшейся практике. Вижу разумным использовать БЭМ нейминг, верстка не поедет при дальнейшей поддержке. На курсах будем проходить. Сейчас нейминг с "_" вступает в конфликт с БЭМ, тк. по бэму дочерние элементы называеются через "__" И скажем, join__company_container будет не оченть читаться, гораздо лучше join__company-container. Это мои размышления вслух, пока практики нет, чтобы что-то говорить.-->
+	<section id="join-company">
 		<div class="container">
 			<img src="images/" alt="">
 			<h2>Join our creative company</h2>
@@ -131,22 +129,20 @@
 
 	<section class="offer">
 		<div class="container">
-		<!-- Примечание. Обращай внимание, чтобы везде отступы были одинакомы или табами или пробелами. Для кода это не важно, но потом проще в нем разбираться -->
-			<h2>our service</h2>
-			<div class="box_offer_main">
-				<div class="box_offer">
+		<!-- Примечание. Обращай внимание, чтобы везде отступы были одинакомы или табами или пробелами. Для кода это не важно, но потом проще в нем разбираться. Странно, у меня стоит в саблайме таб на 2 пробела.. -->
+			<h2>what we offer</h2>
+			<div class="box-offer-main">
+				<div class="box-offer">
 					<img src="" alt="">
 			  		<h3>technical analysis</h3>
 			  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis molestias at ratione veniam iure minus nam pariatur corporis ea tenetur.</p>
 				</div>
-				<div class="box_offer">
+				<div class="box-offer">
 			  		<img src="" alt="">
 			  		<h3>consultation</h3>
 			  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis molestias at ratione veniam iure minus nam pariatur corporis ea tenetur.</p>
-			  	</div>
-			</div>
-			<div class="box_offer_main">
-				<div class="box_offer">
+			  </div>
+				<div class="box-offer">
 				  	<img src="" alt="">
 				  	<h3>general contract</h3>
 				  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis molestias at ratione veniam iure minus nam pariatur corporis ea tenetur.</p>
@@ -164,7 +160,7 @@
 	<section id="reviews">
 		<div class="container">
 			<h2>customer reviews</h2>
-			<!-- Здесь я бы тоже сипользовал плагин Cycle2. Там есть разные настройки-->
+			<!-- Здесь я бы тоже сипользовал плагин Cycle2. Там есть разные настройки. // Сделаем.-->
 			<div class="review">
 				<img src="" alt="">	
 				<h3>ejazul islam</h3>
