@@ -3,20 +3,73 @@
   src: url(fonts/RobotoCondensed-Bold.ttf);
 }
 
+/* Для нас, на практике это не пишу */
+/* Стили для стандартных тегов */
 body {
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 18px;
+	line-height: 25px;
+	/* Лучше подключить Light */
 	font-family: "RobotoCondensed-Bold", Arial, sans-serif;
-	/*font-weight: 700;*/
-	text-transform: uppercase;
-	color: #3f444a;
-	min-width: 1170px;
-	padding: 0;
-	margin: 0;
+	color: #5c6873;
+}
+h1{
+
+}
+h2{
+	
+}
+h3{
+
+}
+h4{
+
+}
+p{
+
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	/* Чтобы картинка была responsive */
+	max-width: 100%;
+}
+/* Стили для section сверху вниз */
+.container {
+	max-width: 1170px;
+	margin: auto;
+	padding: 0 15px;
 }
 
-.container {
-	width: 1140px;
-	margin: 0 auto;
-	padding: 0 10px;
+/* header */
+nav{
+	height: 82px;
+	background: #ffffff;
 }
+.logo{
+	float: left;
+}
+nav ul{
+	float: right;
+}
+nav li{
+	float: left;
+	padding-right: 34px;
+}
+nav li:last-child{
+	padding-right: 0px;
+}
+nav li a{
+	font-family: "RobotoCondensed-Bold";
+	font-size: 14px;
+	line-height: 18px;
+	color: #3f444a;
+	text-transform: uppercase;
+}
+nav li a:hover, .active{
+	color: #ec4848;
+}
+/* the end header */
