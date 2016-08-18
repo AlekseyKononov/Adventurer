@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: RobotoCondensed-Bold;
   src: url(fonts/RobotoCondensed-Bold.ttf);
-}
+} */
 
 /* Для нас, на практике это не пишу */
 /* Стили для стандартных тегов */
@@ -9,11 +9,12 @@ body {
 	font-size: 18px;
 	line-height: 25px;
 	/* Лучше подключить Light // Но ведь в макетк шрифты детектятся как Bold? */
-	font-family: "RobotoCondensed-Bold", Arial, sans-serif;
+	font-family: "Roboto Condensed", Arial, sans-serif;
+	font-weight: 300;
 	color: #5c6873;
 }
 h1{
-
+	margin: 0px;
 }
 h2{
 	
@@ -48,25 +49,22 @@ img{
 nav{
 	height: 82px;
 	background: #ffffff;
+	position: relative;
 }
 .logo{
 	float: left;
-	background-color: #ec4848; /*Как сделать цвета лого красным? У меня вырезана прозрачная форма.*/
-	padding-left: 215px;
 	padding-top: 28px;
-	padding-bottom: 28px; /*Как впихнуть значок справа от навигации?*/
+	padding-bottom: 28px;
 }
 .search {
 	position: absolute;
-	float: right;
-	right: 20px;
+	right: 0px;
 	top: 25px;
-	/*padding-right: 230px;
-	padding-top: 24px;
-	padding-bottom: 24px;*/
 }
 nav ul{
 	float: right;
+	padding-right: 44px;
+	padding-top: 8px;
 }
 nav li{
 	float: left;
@@ -76,13 +74,19 @@ nav li:last-child{
 	padding-right: 20px;
 }
 nav li a{
-	font-family: "RobotoCondensed-Bold";
+	font-family: "Roboto Condensed";
+	font-weight: 700;
 	font-size: 14px;
 	line-height: 18px;
+	font-weight: bold;
 	color: #3f444a;
 	text-transform: uppercase;
 }
 nav li a:hover, .active{
 	color: #ec4848;
+}
+.jumbotron{
+	/* Сделал, чтобы было видно границу - потом удалить надо будет */
+	background: gray;
 }
 /* the end header */
