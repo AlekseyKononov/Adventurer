@@ -8,7 +8,7 @@
 body {
 	font-size: 18px;
 	line-height: 25px;
-	/* Лучше подключить Light */
+	/* Лучше подключить Light // Но ведь в макетк шрифты детектятся как Bold? */
 	font-family: "RobotoCondensed-Bold", Arial, sans-serif;
 	color: #5c6873;
 }
@@ -51,6 +51,19 @@ nav{
 }
 .logo{
 	float: left;
+	background-color: #ec4848; /*Как сделать цвета лого красным? У меня вырезана прозрачная форма.*/
+	padding-left: 215px;
+	padding-top: 28px;
+	padding-bottom: 28px; /*Как впихнуть значок справа от навигации?*/
+}
+.search {
+	position: absolute;
+	float: right;
+	right: 20px;
+	top: 25px;
+	/*padding-right: 230px;
+	padding-top: 24px;
+	padding-bottom: 24px;*/
 }
 nav ul{
 	float: right;
@@ -60,7 +73,7 @@ nav li{
 	padding-right: 34px;
 }
 nav li:last-child{
-	padding-right: 0px;
+	padding-right: 20px;
 }
 nav li a{
 	font-family: "RobotoCondensed-Bold";
