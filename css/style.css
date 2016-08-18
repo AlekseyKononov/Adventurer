@@ -8,10 +8,9 @@
 body {
 	font-size: 18px;
 	line-height: 25px;
-	/* Лучше подключить Light // Но ведь в макетк шрифты детектятся как Bold? */
 	font-family: "Roboto Condensed", Arial, sans-serif;
 	font-weight: 300;
-	color: #5c6873;
+	color: #3f444a;
 }
 h1{
 	margin: 0px;
@@ -90,3 +89,94 @@ nav li a:hover, .active{
 	background: gray;
 }
 /* the end header */
+
+/*Who we are*/
+
+.who-we-are h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.who-we-are h3 {
+	max-width: 800px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.accordion {
+	float: left;
+}
+
+.skills {
+	float: right;
+	max-width: 540px;
+}
+
+#skills span {
+    top: -30px;
+    left: 2%;
+    position: relative;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+progress {
+    background-color: #ec4848;
+    border: 0;
+    height: 30px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0eaf0;
+}
+
+progress::-webkit-progress-value {
+    background-color: #ec4848;
+}
+
+progress::-moz-progress-bar {
+    background-color: #ec4848;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
