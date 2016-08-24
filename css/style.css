@@ -226,11 +226,23 @@ progress::-moz-progress-bar {
 }
 
 
-
-
-
-
-
+/* Join our creative company */
+#join-company {
+	height: 515px;
+	background-image: url('../images/Rectangle10-copy2-min.jpg');
+	color: #ffffff;
+}
+#join-company .container {
+	max-width: 730px;
+	padding-top: 100px;
+}
+.person-icon {
+	padding-left: 330px;
+}
+.join-company p {
+	text-align: center;
+	margin: auto;
+}
 
 
 
