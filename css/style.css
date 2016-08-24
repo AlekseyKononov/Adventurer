@@ -240,6 +240,28 @@ progress::-moz-progress-bar {
 	text-align: center;
 }
 
+/* What we offer */
+#offer {
+	height: 475px;
+}
+
+#offer .container {
+	width: 1170px;
+}
+
+#offer .offer-left-block {
+	width: 50%;
+	float: left;
+}
+
+#offer .offer-right-block {
+	width: 50%;
+	float: right;
+}
+
+#offer .box-offer{
+	width: 100%;
+}
 
 
 
