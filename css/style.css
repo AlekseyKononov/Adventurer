@@ -241,28 +241,25 @@ progress::-moz-progress-bar {
 }
 
 /* What we offer */
-#offer {
-	height: 475px;
-}
-
-#offer .container {
-	width: 1170px;
-}
-
-#offer .offer-left-block {
+#offer .box-offer {
 	width: 50%;
 	float: left;
+	padding: 0 30px 60px 30px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
-
-#offer .offer-right-block {
-	width: 50%;
-	float: right;
+#offer h3{
+	text-transform: uppercase;
+	margin: 0;
 }
-
-#offer .box-offer{
-	width: 100%;
+#offer img{
+	float: left;
+	padding-right: 28px;
 }
-
+#offer p{
+	color: #5c6873;
+}
 
 
 
