@@ -230,7 +230,6 @@ progress::-moz-progress-bar {
 /* Join our creative company */
 #join-company {
 	height: 515px;
-	/* background-image: url('../images/Rectangle10-copy2-min.jpg'); */
 	background-image: url('../images/Rectangle10-copy2-sasha.jpg');
 	color: #ffffff;
 }
@@ -262,8 +261,36 @@ progress::-moz-progress-bar {
 }
 
 
+/* Customer Reviews */
 
+#reviews {
+	height: 595px;
+}
 
+#reviews .container {
+	width: 825px;
+}
+
+#reviews h4 {
+	color: #ec4848;
+}
+
+#reviews img {
+	float: left;
+	padding-bottom: 20px;
+}
+
+#reviews .right-block-review {
+	float: right;
+	width: 75%;
+}
+
+	/* -- Features-- */
+
+#features {
+	background-image: url('../images/BI2.jpg');
+	height: 375px;
+}
 
 
 
