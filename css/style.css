@@ -339,21 +339,127 @@ progress::-moz-progress-bar {
 	padding-top: 24px;
 }
 
+/* <!-- Meet our team--> */
 
+#meet-our-team {
+	height: 595px;
+	padding-top: 50px;
+}
 
+#meet-our-team p {
+	max-width: 800px;
+	text-align: center;
+	margin: auto;
+	padding-top: 40px;
+}
 
+#meet-our-team .person {
+	width: 270px;
+	height: 300px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 50px;
+	position: relative;
+}
 
+#meet-our-team img {
+	float: left;
+	display: block;
+}
 
+#meet-our-team .pop-up {
+	font-size: 18px;
+	position: absolute;
+	top: 210px;
+	color: #ffffff;
 
+}
 
+/* Sprites - не знаю как подключить */ 
+.behance, .dribbble, .facebook, .pinterest, .twitter{
+	background: url('../images/sprite/sprites.png') no-repeat;
+}
 
+ .behance{
+	background-position: -367px -79px ;
+	width: 18px;
+	height: 12px;
+}
 
+.dribbble{
+	background-position: -367px -79px ;
+	width: 19px;
+	height: 17px;
+}
 
+.person .facebook{
+	background-position: -367px -79px ;
+	width: 9px;
+	height: 17px;
+}
 
+.person .pinterest{
+	background-position: -367px -79px ;
+	width: 14px;
+	height: 17px;
+}
 
+.person .twitter{
+	background-position: -367px -79px ;
+	width: 18px;
+	height: 15px;
+}
 
+/* end sprites */
 
+#our-work {
+	height: 250px;
+}
 
+#our-work .container p {
+	max-width: 700px;
+	text-align: center;
+	margin: auto;
+	padding-top: 40px;
+}
+ 
+#our-work ul {
+	float: left;
+	margin-left: 0 auto;
+	
+}
+#our-work li {
+	float: left;
+	padding-right: 34px;
+
+}
+
+#our-work li a {
+	font-family: "Roboto Condensed";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #3f444a;
+	text-transform: uppercase;
+}
+#our-work li a:hover, .active {
+	color: #ec4848;
+ }
+
+#our-work .our-work-container {
+ 	padding-top: 40px;
+ 	width: 450px;
+ 	height: 30px;
+ 	margin: auto;
+}
+
+#our-work .item {
+	width: 350px;
+	height: 295px;
+	padding-right: 30px;
+	float: left
+}
 
 
 
