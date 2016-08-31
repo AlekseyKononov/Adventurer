@@ -363,7 +363,7 @@ progress::-moz-progress-bar {
 
 #meet-our-team .person {
 	/* как ширина фотографии. Когда будешь смотреть адаптивность, увидишь, что надо исправить */
-	width: 268px; 
+	width: 23%; 
 	height: 300px;
 	float: left;
 	margin-right: 20px;
@@ -432,8 +432,11 @@ progress::-moz-progress-bar {
 }
 /* end sprites */
 
+/* <!-- Our awesome works--> */
+
 #our-work {
 	padding-bottom: 78px;
+	height: 955px;
 }
 #our-work .container p {
 	max-width: 700px;
@@ -532,3 +535,93 @@ progress::-moz-progress-bar {
 	right: 11px;
 	top: 9px;
 }
+
+/* <!-- Our awesome works 2--> */
+
+#our-work-2 {
+	height: 280px;
+}
+
+#our-work-2 .container h2 {
+	max-width: 700px;
+	text-align: center;
+	margin: auto;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+#our-work-2 a{
+	width: 220px;
+	height: 80px;
+	float: left;
+	text-indent: -9999px;
+}
+
+#our-work-2 .icon-graphicriver {
+	background: url('../images/graphicriver-light-min.png') no-repeat;
+}
+
+#our-work-2 .icon-themeforest {
+	background: url('../images/themeforest-light-min.png') no-repeat;
+}
+
+#our-work-2 .icon-audiojungle {
+	background: url('../images/audiojungle-dark-min.png') no-repeat;
+}
+
+#our-work-2 .icon-codecanyon {
+	background: url('../images/codecanyon-light-min.png') no-repeat;
+}
+
+#our-work-2 .icon-activeden {
+	background: url('../images/activeden-light-min.png') no-repeat;
+}
+
+/* <!-- Subscribe--> */
+
+#subscribe{
+	height: 80px;
+	background-color: #312b2b;
+}
+
+#subscribe p{
+	float: left;
+	color: #adacac;
+	padding-left: 30px;
+	padding-top: 8px;
+
+}
+#subscribe form{
+	float: right;
+	padding-right: 30px;
+	padding-top: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
