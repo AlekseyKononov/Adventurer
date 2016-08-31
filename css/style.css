@@ -33,6 +33,7 @@ a{
 img{
 	/* Чтобы картинка была responsive */
 	max-width: 100%;
+	vertical-align: bottom;
 }
 /* Стили для section сверху вниз */
 .container {
@@ -342,10 +343,17 @@ progress::-moz-progress-bar {
 /* <!-- Meet our team--> */
 
 #meet-our-team {
-	height: 595px;
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
-
+#meet-our-team h3{
+	font-size: 24px;
+    line-height: 28px;
+    padding-top: 8px;
+}
+#meet-our-team h4{
+	padding-bottom: 7px;
+}
 #meet-our-team p {
 	max-width: 800px;
 	text-align: center;
@@ -354,7 +362,8 @@ progress::-moz-progress-bar {
 }
 
 #meet-our-team .person {
-	width: 270px;
+	/* как ширина фотографии. Когда будешь смотреть адаптивность, увидишь, что надо исправить */
+	width: 268px; 
 	height: 300px;
 	float: left;
 	margin-right: 20px;
@@ -362,79 +371,94 @@ progress::-moz-progress-bar {
 	position: relative;
 }
 
-#meet-our-team img {
-	float: left;
+.pop-up {
+	font-size: 18px;
+	position: absolute;
+	top: 200px;
+	color: #ffffff;
+	background: #ec4848;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	display: none;
+}
+.person:hover .pop-up{
 	display: block;
 }
 
-#meet-our-team .pop-up {
-	font-size: 18px;
-	position: absolute;
-	top: 210px;
-	color: #ffffff;
-
-}
-
 /* Sprites - не знаю как подключить */ 
-.behance, .dribbble, .facebook, .pinterest, .twitter{
+.sprite{
 	background: url('../images/sprite/sprites.png') no-repeat;
-}
-
- .behance{
-	background-position: -367px -79px ;
-	width: 18px;
-	height: 12px;
-}
-
-.dribbble{
-	background-position: -367px -79px ;
+	display: inline-block;
 	width: 19px;
 	height: 17px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	border-bottom: 2px solid #ec4848;
 }
-
-.person .facebook{
-	background-position: -367px -79px ;
-	width: 9px;
-	height: 17px;
+.sprite:hover{
+	background: url('../images/sprite/sprire_hover.png') no-repeat;
+	border-bottom: 2px solid #000000;
 }
-
-.person .pinterest{
-	background-position: -367px -79px ;
-	width: 14px;
-	height: 17px;
+.behance{
+	background-position: 4px -76px;
 }
-
-.person .twitter{
-	background-position: -367px -79px ;
-	width: 18px;
-	height: 15px;
+.dribbble{
+	background-position: 2px 0px;
 }
-
+.facebook{
+	background-position: 3px -21px;
+}
+.pinterest{
+	background-position: 4px -40px;
+}
+.twitter{
+	background-position: 4px -58px;
+}
+.behance:hover{
+	background-position: 4px -76px;
+}
+.dribbble:hover{
+	background-position: 2px 0px;
+}
+.facebook:hover{
+	background-position: 3px -21px;
+}
+.pinterest:hover{
+	background-position: 4px -40px;
+}
+.twitter:hover{
+	background-position: 4px -58px;
+}
 /* end sprites */
 
 #our-work {
-	height: 250px;
+	padding-bottom: 78px;
 }
-
 #our-work .container p {
 	max-width: 700px;
 	text-align: center;
 	margin: auto;
 	padding-top: 40px;
+} 
+#our-work ul{
+ 	width: 364px;
+ 	margin: auto;
+ 	padding: 60px 0 0 0;
 }
- 
-#our-work ul {
-	float: left;
-	margin-left: 0 auto;
-	
+#our-work ul:after{
+	content: "";
+	clear: both;
+	display: block;
 }
-#our-work li {
+#our-work li{
 	float: left;
 	padding-right: 34px;
-
 }
-
-#our-work li a {
+#our-work li:last-child{
+	padding-right: 0px;
+}
+#our-work li a{
 	font-family: "Roboto Condensed";
 	font-weight: 700;
 	font-size: 14px;
@@ -443,26 +467,68 @@ progress::-moz-progress-bar {
 	color: #3f444a;
 	text-transform: uppercase;
 }
-#our-work li a:hover, .active {
+#our-work li a:hover, #our-work li a.active {
 	color: #ec4848;
- }
-
-#our-work .our-work-container {
- 	padding-top: 40px;
- 	width: 450px;
- 	height: 30px;
- 	margin: auto;
 }
-
 #our-work .item {
-	width: 350px;
-	height: 295px;
-	padding-right: 30px;
-	float: left
+	width: 33.333333333%;
+	padding: 30px 15px 0 15px;
+	float: left;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
-
-
-
-
-
-
+#our-work .item img{
+	width: 100%;
+}
+#our-work .item h3{
+	color: #5c6873;
+	font-weight: 400;
+	padding-top: 12px;
+}
+#our-work .item p{
+	color: #5c6873;
+	padding-top: 0px;
+	font-size: 14px;
+}
+.item_second{
+	position: relative;
+}
+.work_popup{
+	background: rgba(236, 72, 72, 0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+.item_second:hover .work_popup{
+	display: block;
+}
+.link_zoom{
+	background: url('../images/link_zoom.png') no-repeat;
+	width: 79px;
+	height: 32px;
+	margin: auto;
+	margin-top: 84px;
+	position: relative;
+}
+.zoom{
+	background: url('../images/zoom.png') no-repeat;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	position: absolute;
+	left: 11px;
+	top: 10px;
+}
+.link{
+	background: url('../images/link.png') no-repeat;
+	width: 12px;
+	height: 13px;
+	display: inline-block;
+	position: absolute;
+	right: 11px;
+	top: 9px;
+}
