@@ -606,12 +606,76 @@ progress::-moz-progress-bar {
 	float: right;
 	padding-right: 30px;
 	padding-top: 26px;
+
 }
 
+/* <!-- Footer--> */
 
+#footer .container {
+	background: #151515;
+	padding-bottom: 420px;
+	color: #6a6a6a;
+}
 
+#footer .block {
+	max-width: 20%;
+	float: left;
+}
 
+#footer .social-block h2 {
+	color: #ec4848;
+}
 
+#footer .fb{
+	width: 45px;
+	height: 45px;
+	background-color: #ffffff;
+	background-image: url('../images/Icon-4-min.png');
+	background-repeat: no-repeat;
+}
+
+#footer .google{
+	width: 45px;
+	height: 45px;
+	background-color: #ffffff;
+	background-image: url('../images/Icon-3-min.png');
+	background-repeat: no-repeat;
+
+}
+#footer .twitter{
+	width: 45px;
+	height: 45px;
+	background-color: #ffffff;
+	background-image: url('../images/Icon-min.png');
+	background-repeat: no-repeat;
+}
+#footer .vimeo{
+	width: 45px;
+	height: 45px;
+	background-color: #ffffff;
+	background-image: url('../images/Icon-1-min.png');
+	background-repeat: no-repeat;
+}
+#footer .linkedin{
+	width: 45px;
+	height: 45px;
+	background-color: #ffffff;
+	background-image: url('../images/Icon-2-min.png');
+	background-repeat: no-repeat;
+}
+#footer .icons{
+	float: left;
+}
+
+#footer .feature-block h3{
+	color: #ffffff;
+}
+#footer .feature-block li{
+	background-image: url('../images/done-icon.png');
+	background-repeat: no-repeat;
+	/* как сделать ее красным? */
+
+}
 
 
 
